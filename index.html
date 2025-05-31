@@ -1,24 +1,36 @@
-<html>
+<!doctype html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
-        <link
-            crossorigin=""
-            href="https://fonts.gstatic.com/"
-            rel="preconnect"
-        />
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+        <!-- Preconnect to external resources -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-        <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
-        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <!-- Material Icons -->
         <link
-            href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
             rel="stylesheet"
         />
-        <title>Stitch Design</title>
+
+        <!-- Favicon (base64 placeholder) -->
         <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
 
+        <!-- Tailwind (development) -->
+        <script
+            src="https://cdn.tailwindcss.com?plugins=forms,container-queries"
+            defer
+        ></script>
+
+        <!-- Google Font: Space Mono -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Stitch Design</title>
+
+        <!-- Inline styles for SQL highlighting and cursor -->
         <style>
             .sql-keyword {
                 color: #8a2be2;
@@ -47,38 +59,69 @@
     </head>
 
     <body
+        class="font-space-grotesk"
         style="
             font-family:
                 &quot;Space Grotesk&quot;, &quot;Noto Sans&quot;, sans-serif;
         "
     >
-        <body class="font-space-grotesk">
-        <div class="relative flex size-full min-h-screen flex-col bg-[#111418] dark group/design-root overflow-x-hidden">
-        <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#293038] px-10 py-6">
-        <div class="flex items-baseline gap-3">
-        <h1 class="text-white text-2xl font-bold leading-tight tracking-tight">Luis García</h1>
-        <span class="text-[#9daab8] text-sm font-mono leading-normal">— Backend Developer</span>
-        </div>
-        <nav class="flex items-center gap-6">
-        <a class="text-white text-sm font-medium leading-normal hover:text-[#1460b7] transition-colors" href="#">About</a>
-        <a class="text-white text-sm font-medium leading-normal hover:text-[#1460b7] transition-colors" href="#">Projects</a>
-        <a class="text-white text-sm font-medium leading-normal hover:text-[#1460b7] transition-colors" href="#">Contact</a>
-        </nav>
-        </header>
-        <main class="flex flex-1 items-center justify-center py-10">
-        <div class="flex flex-col items-center text-center max-w-2xl px-4">
-        <h2 class="text-white text-4xl font-bold leading-tight tracking-tight mb-4">Welcome</h2>
-        <p class="text-[#9daab8] text-lg font-normal leading-relaxed">
-                      This is the portfolio of Luis García, a backend developer.
-                    </p>
-        </div>
-        </main>
-        </div>
+        <!-- Section 1: Header & Welcome -->
+        <div
+            class="relative flex min-h-screen flex-col bg-[#111418] overflow-x-hidden"
+        >
+            <div class="layout-container flex h-full grow flex-col">
+                <header
+                    class="flex items-center justify-between border-b border-[#293038] px-10 py-6"
+                >
+                    <div class="flex items-baseline gap-3">
+                        <h1
+                            class="text-white text-2xl font-bold tracking-tight"
+                        >
+                            Luis García
+                        </h1>
+                        <span class="text-[#9daab8] text-sm font-mono">
+                            — Backend Developer
+                        </span>
+                    </div>
+
+                    <nav class="flex items-center gap-6">
+                        <a
+                            href="#"
+                            class="text-white text-sm font-medium hover:text-[#1460b7] transition-colors"
+                            >About</a
+                        >
+                        <a
+                            href="#"
+                            class="text-white text-sm font-medium hover:text-[#1460b7] transition-colors"
+                            >Projects</a
+                        >
+                        <a
+                            href="#"
+                            class="text-white text-sm font-medium hover:text-[#1460b7] transition-colors"
+                            >Contact</a
+                        >
+                    </nav>
+                </header>
+
+                <main class="flex flex-1 items-center justify-center py-10">
+                    <div
+                        class="flex flex-col items-center text-center max-w-2xl px-4"
+                    >
+                        <h2 class="text-white text-4xl font-bold mb-4">
+                            Welcome
+                        </h2>
+                        <p class="text-[#9daab8] text-lg leading-relaxed">
+                            This is the portfolio of Luis García, a backend
+                            developer.
+                        </p>
+                    </div>
+                </main>
+            </div>
         </div>
 
+        <!-- Section 2: Data Stream Simulation -->
         <div
-            class="relative flex size-full min-h-screen flex-col bg-black group/design-root overflow-x-hidden"
+            class="relative flex min-h-screen flex-col bg-black overflow-x-hidden"
         >
             <div
                 class="layout-container flex h-full grow flex-col items-center"
@@ -89,6 +132,7 @@
                     <div
                         class="layout-content-container flex flex-col max-w-[1024px] flex-1"
                     >
+                        <!-- Title & Description -->
                         <div class="text-center mb-8">
                             <h2
                                 class="text-[#0CF2BC] tracking-widest text-3xl sm:text-4xl font-bold uppercase"
@@ -96,15 +140,18 @@
                                 &lt;Data_Stream&gt;
                             </h2>
                             <p
-                                class="text-gray-400 text-sm sm:text-base font-normal leading-normal mt-2"
+                                class="text-gray-400 text-sm sm:text-base leading-normal mt-2"
                             >
                                 Initiating live feed from the primary
                                 databank... Stand by for data retrieval.
                             </p>
                         </div>
+
+                        <!-- Terminal-style Box -->
                         <div
                             class="bg-[#0F0F0F] border border-[#0CF2BC]/30 rounded-xl shadow-2xl shadow-[#0CF2BC]/20 p-6 sm:p-8 mb-12"
                         >
+                            <!-- Window Controls -->
                             <div class="flex items-center mb-4">
                                 <div
                                     class="w-3 h-3 rounded-full bg-red-500 mr-2"
@@ -121,13 +168,16 @@
                                     /dev/ttyS0
                                 </p>
                             </div>
+
+                            <!-- Simulated SQL Query -->
                             <pre
                                 class="text-sm sm:text-base font-mono leading-relaxed whitespace-pre-wrap"
                                 style="
                                     font-family:
                                         &quot;Space Mono&quot;, monospace;
                                 "
-                            ><span class="sql-comment">-- Simulating dynamic data loading from 'bastian' database</span>
+                            >
+<span class="sql-comment">-- Simulating dynamic data loading from 'bastian' database</span>
 <span class="sql-keyword">SELECT</span>
   <span class="sql-identifier">names</span><span class="sql-punctuation">,</span>
   <span class="sql-identifier">description</span>
@@ -135,6 +185,8 @@
   <span class="sql-identifier">bastian</span><span class="sql-punctuation">;</span><span class="blinking-cursor text-[#0CF2BC]">_</span>
             </pre>
                         </div>
+
+                        <!-- Responsive Table -->
                         <div class="px-0 sm:px-4 py-3 @container">
                             <div
                                 class="flex overflow-hidden rounded-xl border border-[#8A2BE2]/30 bg-[#0F0F0F] shadow-2xl shadow-[#8A2BE2]/10"
@@ -145,12 +197,12 @@
                                             class="bg-[#1A1A1A] border-b border-[#8A2BE2]/30"
                                         >
                                             <th
-                                                class="table-644b7848-eeec-4857-8b97-630e41bdb595-column-120 px-4 sm:px-6 py-3 text-left text-[#0CF2BC] w-2/5 sm:w-1/3 text-xs sm:text-sm font-medium uppercase tracking-wider"
+                                                class="px-4 sm:px-6 py-3 text-left text-[#0CF2BC] w-2/5 sm:w-1/3 text-xs sm:text-sm font-medium uppercase tracking-wider"
                                             >
                                                 Project_ID
                                             </th>
                                             <th
-                                                class="table-644b7848-eeec-4857-8b97-630e41bdb595-column-240 px-4 sm:px-6 py-3 text-left text-[#0CF2BC] w-3/5 sm:w-2/3 text-xs sm:text-sm font-medium uppercase tracking-wider"
+                                                class="px-4 sm:px-6 py-3 text-left text-[#0CF2BC] w-3/5 sm:w-2/3 text-xs sm:text-sm font-medium uppercase tracking-wider"
                                             >
                                                 Description_Log
                                             </th>
@@ -161,12 +213,12 @@
                                             class="transition-colors hover:bg-[#8A2BE2]/10"
                                         >
                                             <td
-                                                class="table-644b7848-eeec-4857-8b97-630e41bdb595-column-120 h-[72px] px-4 sm:px-6 py-4 w-2/5 sm:w-1/3 text-white text-sm font-mono"
+                                                class="h-[72px] px-4 sm:px-6 py-4 w-2/5 sm:w-1/3 text-white text-sm font-mono"
                                             >
                                                 Project Alpha
                                             </td>
                                             <td
-                                                class="table-644b7848-eeec-4857-8b97-630e41bdb595-column-240 h-[72px] px-4 sm:px-6 py-4 w-3/5 sm:w-2/3 text-gray-400 text-sm font-mono"
+                                                class="h-[72px] px-4 sm:px-6 py-4 w-3/5 sm:w-2/3 text-gray-400 text-sm font-mono"
                                             >
                                                 A backend service for user
                                                 authentication and
@@ -178,12 +230,12 @@
                                             class="transition-colors hover:bg-[#8A2BE2]/10"
                                         >
                                             <td
-                                                class="table-644b7848-eeec-4857-8b97-630e41bdb595-column-120 h-[72px] px-4 sm:px-6 py-4 w-2/5 sm:w-1/3 text-white text-sm font-mono"
+                                                class="h-[72px] px-4 sm:px-6 py-4 w-2/5 sm:w-1/3 text-white text-sm font-mono"
                                             >
                                                 Project Beta
                                             </td>
                                             <td
-                                                class="table-644b7848-eeec-4857-8b97-630e41bdb595-column-240 h-[72px] px-4 sm:px-6 py-4 w-3/5 sm:w-2/3 text-gray-400 text-sm font-mono"
+                                                class="h-[72px] px-4 sm:px-6 py-4 w-3/5 sm:w-2/3 text-gray-400 text-sm font-mono"
                                             >
                                                 An API for managing product
                                                 inventory and orders. Features
@@ -195,12 +247,12 @@
                                             class="transition-colors hover:bg-[#8A2BE2]/10"
                                         >
                                             <td
-                                                class="table-644b7848-eeec-4857-8b97-630e41bdb595-column-120 h-[72px] px-4 sm:px-6 py-4 w-2/5 sm:w-1/3 text-white text-sm font-mono"
+                                                class="h-[72px] px-4 sm:px-6 py-4 w-2/5 sm:w-1/3 text-white text-sm font-mono"
                                             >
                                                 Project Gamma
                                             </td>
                                             <td
-                                                class="table-644b7848-eeec-4857-8b97-630e41bdb595-column-240 h-[72px] px-4 sm:px-6 py-4 w-3/5 sm:w-2/3 text-gray-400 text-sm font-mono"
+                                                class="h-[72px] px-4 sm:px-6 py-4 w-3/5 sm:w-2/3 text-gray-400 text-sm font-mono"
                                             >
                                                 A data pipeline for processing
                                                 and analyzing user activity.
@@ -213,12 +265,12 @@
                                             class="transition-colors hover:bg-[#8A2BE2]/10"
                                         >
                                             <td
-                                                class="table-644b7848-eeec-4857-8b97-630e41bdb595-column-120 h-[72px] px-4 sm:px-6 py-4 w-2/5 sm:w-1/3 text-white text-sm font-mono"
+                                                class="h-[72px] px-4 sm:px-6 py-4 w-2/5 sm:w-1/3 text-white text-sm font-mono"
                                             >
                                                 Project Delta
                                             </td>
                                             <td
-                                                class="table-644b7848-eeec-4857-8b97-630e41bdb595-column-240 h-[72px] px-4 sm:px-6 py-4 w-3/5 sm:w-2/3 text-gray-400 text-sm font-mono"
+                                                class="h-[72px] px-4 sm:px-6 py-4 w-3/5 sm:w-2/3 text-gray-400 text-sm font-mono"
                                             >
                                                 Microservice architecture for a
                                                 scalable e-commerce platform.
@@ -229,14 +281,12 @@
                                     </tbody>
                                 </table>
                             </div>
+
+                            <!-- Container Queries for Table -->
                             <style>
-                                @container (max-width:480px) {
-                                    .table-644b7848-eeec-4857-8b97-630e41bdb595-column-120 {
-                                        font-size: 0.8rem;
-                                        padding-left: 0.75rem;
-                                        padding-right: 0.75rem;
-                                    }
-                                    .table-644b7848-eeec-4857-8b97-630e41bdb595-column-240 {
+                                @container (max-width: 480px) {
+                                    th,
+                                    td {
                                         font-size: 0.8rem;
                                         padding-left: 0.75rem;
                                         padding-right: 0.75rem;
@@ -251,153 +301,446 @@
                 </div>
             </div>
         </div>
-    </body>
-    <div class="relative flex size-full min-h-screen flex-col bg-[#111418] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
-    <div class="layout-container flex h-full grow flex-col">
-    <div class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-10">
-    <div class="layout-content-container flex flex-col max-w-5xl flex-1">
-    <h2 class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight px-4 pb-6 pt-5 text-center sm:text-left">Technical Skills</h2>
-    <div class="space-y-10 p-4">
-    <div>
-    <h3 class="text-[#1460b7] text-xl sm:text-2xl font-semibold mb-6 flex items-center">
-    <span class="material-icons-outlined mr-3 text-3xl">code</span>
-                    Core Technologies
-                  </h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="flex flex-col gap-4 rounded-xl border border-[#3c4753] bg-[#1c2126] p-6 hover:shadow-lg hover:shadow-[#1460b7]/30 transition-shadow duration-300">
-    <div class="flex items-center gap-3 mb-2">
-    <span class="material-icons-outlined text-[#1460b7] text-2xl">terminal</span>
-    <h4 class="text-white text-lg font-semibold leading-tight">Programming Languages</h4>
-    </div>
-    <div class="grid grid-cols-3 gap-4 text-center">
-    <div class="flex flex-col items-center">
-    <span class="material-icons-outlined text-3xl text-gray-300 mb-1">data_object</span>
-    <p class="text-gray-300 text-sm">Python</p>
-    </div>
-    <div class="flex flex-col items-center">
-    <span class="material-icons-outlined text-3xl text-gray-300 mb-1">integration_instructions</span>
-    <p class="text-gray-300 text-sm">Java</p>
-    </div>
-    <div class="flex flex-col items-center">
-    <span class="material-icons-outlined text-3xl text-gray-300 mb-1">javascript</span>
-    <p class="text-gray-300 text-sm">JavaScript</p>
-    </div>
-    </div>
-    </div>
-    <div class="flex flex-col gap-4 rounded-xl border border-[#3c4753] bg-[#1c2126] p-6 hover:shadow-lg hover:shadow-[#1460b7]/30 transition-shadow duration-300">
-    <div class="flex items-center gap-3 mb-2">
-    <span class="material-icons-outlined text-[#1460b7] text-2xl">dns</span>
-    <h4 class="text-white text-lg font-semibold leading-tight">Databases</h4>
-    </div>
-    <div class="grid grid-cols-3 gap-4 text-center">
-    <div class="flex flex-col items-center">
-    <span class="material-icons-outlined text-3xl text-gray-300 mb-1">storage</span>
-    <p class="text-gray-300 text-sm">PostgreSQL</p>
-    </div>
-    <div class="flex flex-col items-center">
-    <span class="material-icons-outlined text-3xl text-gray-300 mb-1">table_rows</span>
-    <p class="text-gray-300 text-sm">MongoDB</p>
-    </div>
-    <div class="flex flex-col items-center">
-    <span class="material-icons-outlined text-3xl text-gray-300 mb-1">dataset</span>
-    <p class="text-gray-300 text-sm">MySQL</p>
-    </div>
-    </div>
-    </div>
-    <div class="flex flex-col gap-4 rounded-xl border border-[#3c4753] bg-[#1c2126] p-6 hover:shadow-lg hover:shadow-[#1460b7]/30 transition-shadow duration-300">
-    <div class="flex items-center gap-3 mb-2">
-    <span class="material-icons-outlined text-[#1460b7] text-2xl">build_circle</span>
-    <h4 class="text-white text-lg font-semibold leading-tight">Backend Frameworks</h4>
-    </div>
-    <div class="grid grid-cols-3 gap-4 text-center">
-    <div class="flex flex-col items-center">
-    <span class="material-icons-outlined text-3xl text-gray-300 mb-1">dynamic_form</span>
-    <p class="text-gray-300 text-sm">Spring Boot</p>
-    </div>
-    <div class="flex flex-col items-center">
-    <span class="material-icons-outlined text-3xl text-gray-300 mb-1">widgets</span>
-    <p class="text-gray-300 text-sm">Django</p>
-    </div>
-    <div class="flex flex-col items-center">
-    <span class="material-icons-outlined text-3xl text-gray-300 mb-1">developer_mode</span>
-    <p class="text-gray-300 text-sm">Node.js (Express)</p>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div>
-    <h3 class="text-[#1460b7] text-xl sm:text-2xl font-semibold mb-6 flex items-center">
-    <span class="material-icons-outlined mr-3 text-3xl">construction</span>
-                    Tools &amp; Platforms
-                  </h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="flex flex-col gap-4 rounded-xl border border-[#3c4753] bg-[#1c2126] p-6 hover:shadow-lg hover:shadow-[#1460b7]/30 transition-shadow duration-300">
-    <div class="flex items-center gap-3 mb-2">
-    <span class="material-icons-outlined text-[#1460b7] text-2xl">cloud_queue</span>
-    <h4 class="text-white text-lg font-semibold leading-tight">Cloud Platforms</h4>
-    </div>
-    <div class="grid grid-cols-3 gap-4 text-center">
-    <div class="flex flex-col items-center">
-    <span class="material-icons-outlined text-3xl text-gray-300 mb-1">cloud</span>
-    <p class="text-gray-300 text-sm">AWS</p>
-    </div>
-    <div class="flex flex-col items-center">
-    <span class="material-icons-outlined text-3xl text-gray-300 mb-1">cloud_upload</span>
-    <p class="text-gray-300 text-sm">Azure</p>
-    </div>
-    <div class="flex flex-col items-center">
-    <span class="material-icons-outlined text-3xl text-gray-300 mb-1">cloud_circle</span>
-    <p class="text-gray-300 text-sm">Google Cloud</p>
-    </div>
-    </div>
-    </div>
-    <div class="flex flex-col gap-4 rounded-xl border border-[#3c4753] bg-[#1c2126] p-6 hover:shadow-lg hover:shadow-[#1460b7]/30 transition-shadow duration-300">
-    <div class="flex items-center gap-3 mb-2">
-    <span class="material-icons-outlined text-[#1460b7] text-2xl">hub</span>
-    <h4 class="text-white text-lg font-semibold leading-tight">Version Control</h4>
-    </div>
-    <div class="grid grid-cols-3 gap-4 text-center">
-    <div class="flex flex-col items-center">
-    <span class="material-icons-outlined text-3xl text-gray-300 mb-1">commit</span>
-    <p class="text-gray-300 text-sm">Git</p>
-    </div>
-    <div class="flex flex-col items-center">
-    <span class="material-icons-outlined text-3xl text-gray-300 mb-1">share</span>
-    <p class="text-gray-300 text-sm">GitHub</p>
-    </div>
-    <div class="flex flex-col items-center">
-    <span class="material-icons-outlined text-3xl text-gray-300 mb-1">merge_type</span>
-    <p class="text-gray-300 text-sm">GitLab</p>
-    </div>
-    </div>
-    </div>
-    <div class="flex flex-col gap-4 rounded-xl border border-[#3c4753] bg-[#1c2126] p-6 hover:shadow-lg hover:shadow-[#1460b7]/30 transition-shadow duration-300">
-    <div class="flex items-center gap-3 mb-2">
-    <span class="material-icons-outlined text-[#1460b7] text-2xl">api</span>
-    <h4 class="text-white text-lg font-semibold leading-tight">APIs &amp; Integration</h4>
-    </div>
-    <div class="grid grid-cols-3 gap-4 text-center">
-    <div class="flex flex-col items-center">
-    <span class="material-icons-outlined text-3xl text-gray-300 mb-1">http</span>
-    <p class="text-gray-300 text-sm">RESTful APIs</p>
-    </div>
-    <div class="flex flex-col items-center">
-    <span class="material-icons-outlined text-3xl text-gray-300 mb-1">settings_ethernet</span>
-    <p class="text-gray-300 text-sm">GraphQL</p>
-    </div>
-    <div class="flex flex-col items-center">
-    <span class="material-icons-outlined text-3xl text-gray-300 mb-1">settings_input_component</span>
-    <p class="text-gray-300 text-sm">Microservices</p>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
 
+        <!-- Section 3: Technical Skills -->
+        <div
+            class="relative flex min-h-screen flex-col bg-[#111418] overflow-x-hidden"
+        >
+            <div class="layout-container flex h-full grow flex-col">
+                <div
+                    class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-10"
+                >
+                    <div
+                        class="layout-content-container flex flex-col max-w-5xl flex-1"
+                    >
+                        <h2
+                            class="text-white text-3xl sm:text-4xl font-bold tracking-tight px-4 pb-6 pt-5 text-center sm:text-left"
+                        >
+                            Technical Skills
+                        </h2>
+
+                        <div class="space-y-10 p-4">
+                            <!-- Core Technologies -->
+                            <div>
+                                <h3
+                                    class="flex items-center text-[#1460b7] text-xl sm:text-2xl font-semibold mb-6"
+                                >
+                                    <span
+                                        class="material-icons-outlined mr-3 text-3xl"
+                                        >code</span
+                                    >
+                                    Core Technologies
+                                </h3>
+                                <div
+                                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+                                >
+                                    <!-- Programming Languages Card -->
+                                    <div
+                                        class="flex flex-col gap-4 rounded-xl border border-[#3c4753] bg-[#1c2126] p-6 hover:shadow-lg hover:shadow-[#1460b7]/30 transition-shadow duration-300"
+                                    >
+                                        <div
+                                            class="flex items-center gap-3 mb-2"
+                                        >
+                                            <span
+                                                class="material-icons-outlined text-[#1460b7] text-2xl"
+                                            >
+                                                terminal
+                                            </span>
+                                            <h4
+                                                class="text-white text-lg font-semibold"
+                                            >
+                                                Programming Languages
+                                            </h4>
+                                        </div>
+                                        <div
+                                            class="grid grid-cols-3 gap-4 text-center"
+                                        >
+                                            <div
+                                                class="flex flex-col items-center"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined text-3xl text-gray-300 mb-1"
+                                                >
+                                                    data_object
+                                                </span>
+                                                <p
+                                                    class="text-gray-300 text-sm"
+                                                >
+                                                    Python
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="flex flex-col items-center"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined text-3xl text-gray-300 mb-1"
+                                                >
+                                                    integration_instructions
+                                                </span>
+                                                <p
+                                                    class="text-gray-300 text-sm"
+                                                >
+                                                    Java
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="flex flex-col items-center"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined text-3xl text-gray-300 mb-1"
+                                                >
+                                                    javascript
+                                                </span>
+                                                <p
+                                                    class="text-gray-300 text-sm"
+                                                >
+                                                    JavaScript
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Databases Card -->
+                                    <div
+                                        class="flex flex-col gap-4 rounded-xl border border-[#3c4753] bg-[#1c2126] p-6 hover:shadow-lg hover:shadow-[#1460b7]/30 transition-shadow duration-300"
+                                    >
+                                        <div
+                                            class="flex items-center gap-3 mb-2"
+                                        >
+                                            <span
+                                                class="material-icons-outlined text-[#1460b7] text-2xl"
+                                                >dns</span
+                                            >
+                                            <h4
+                                                class="text-white text-lg font-semibold"
+                                            >
+                                                Databases
+                                            </h4>
+                                        </div>
+                                        <div
+                                            class="grid grid-cols-3 gap-4 text-center"
+                                        >
+                                            <div
+                                                class="flex flex-col items-center"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined text-3xl text-gray-300 mb-1"
+                                                >
+                                                    storage
+                                                </span>
+                                                <p
+                                                    class="text-gray-300 text-sm"
+                                                >
+                                                    PostgreSQL
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="flex flex-col items-center"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined text-3xl text-gray-300 mb-1"
+                                                >
+                                                    table_rows
+                                                </span>
+                                                <p
+                                                    class="text-gray-300 text-sm"
+                                                >
+                                                    MongoDB
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="flex flex-col items-center"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined text-3xl text-gray-300 mb-1"
+                                                >
+                                                    dataset
+                                                </span>
+                                                <p
+                                                    class="text-gray-300 text-sm"
+                                                >
+                                                    MySQL
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Backend Frameworks Card -->
+                                    <div
+                                        class="flex flex-col gap-4 rounded-xl border border-[#3c4753] bg-[#1c2126] p-6 hover:shadow-lg hover:shadow-[#1460b7]/30 transition-shadow duration-300"
+                                    >
+                                        <div
+                                            class="flex items-center gap-3 mb-2"
+                                        >
+                                            <span
+                                                class="material-icons-outlined text-[#1460b7] text-2xl"
+                                                >build_circle</span
+                                            >
+                                            <h4
+                                                class="text-white text-lg font-semibold"
+                                            >
+                                                Backend Frameworks
+                                            </h4>
+                                        </div>
+                                        <div
+                                            class="grid grid-cols-3 gap-4 text-center"
+                                        >
+                                            <div
+                                                class="flex flex-col items-center"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined text-3xl text-gray-300 mb-1"
+                                                >
+                                                    dynamic_form
+                                                </span>
+                                                <p
+                                                    class="text-gray-300 text-sm"
+                                                >
+                                                    Spring Boot
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="flex flex-col items-center"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined text-3xl text-gray-300 mb-1"
+                                                >
+                                                    widgets
+                                                </span>
+                                                <p
+                                                    class="text-gray-300 text-sm"
+                                                >
+                                                    Django
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="flex flex-col items-center"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined text-3xl text-gray-300 mb-1"
+                                                >
+                                                    developer_mode
+                                                </span>
+                                                <p
+                                                    class="text-gray-300 text-sm"
+                                                >
+                                                    Node.js (Express)
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tools & Platforms -->
+                            <div>
+                                <h3
+                                    class="flex items-center text-[#1460b7] text-xl sm:text-2xl font-semibold mb-6"
+                                >
+                                    <span
+                                        class="material-icons-outlined mr-3 text-3xl"
+                                        >construction</span
+                                    >
+                                    Tools &amp; Platforms
+                                </h3>
+                                <div
+                                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+                                >
+                                    <!-- Cloud Platforms Card -->
+                                    <div
+                                        class="flex flex-col gap-4 rounded-xl border border-[#3c4753] bg-[#1c2126] p-6 hover:shadow-lg hover:shadow-[#1460b7]/30 transition-shadow duration-300"
+                                    >
+                                        <div
+                                            class="flex items-center gap-3 mb-2"
+                                        >
+                                            <span
+                                                class="material-icons-outlined text-[#1460b7] text-2xl"
+                                            >
+                                                cloud_queue
+                                            </span>
+                                            <h4
+                                                class="text-white text-lg font-semibold"
+                                            >
+                                                Cloud Platforms
+                                            </h4>
+                                        </div>
+                                        <div
+                                            class="grid grid-cols-3 gap-4 text-center"
+                                        >
+                                            <div
+                                                class="flex flex-col items-center"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined text-3xl text-gray-300 mb-1"
+                                                >
+                                                    cloud
+                                                </span>
+                                                <p
+                                                    class="text-gray-300 text-sm"
+                                                >
+                                                    AWS
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="flex flex-col items-center"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined text-3xl text-gray-300 mb-1"
+                                                >
+                                                    cloud_upload
+                                                </span>
+                                                <p
+                                                    class="text-gray-300 text-sm"
+                                                >
+                                                    Azure
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="flex flex-col items-center"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined text-3xl text-gray-300 mb-1"
+                                                >
+                                                    cloud_circle
+                                                </span>
+                                                <p
+                                                    class="text-gray-300 text-sm"
+                                                >
+                                                    Google Cloud
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Version Control Card -->
+                                    <div
+                                        class="flex flex-col gap-4 rounded-xl border border-[#3c4753] bg-[#1c2126] p-6 hover:shadow-lg hover:shadow-[#1460b7]/30 transition-shadow duration-300"
+                                    >
+                                        <div
+                                            class="flex items-center gap-3 mb-2"
+                                        >
+                                            <span
+                                                class="material-icons-outlined text-[#1460b7] text-2xl"
+                                                >hub</span
+                                            >
+                                            <h4
+                                                class="text-white text-lg font-semibold"
+                                            >
+                                                Version Control
+                                            </h4>
+                                        </div>
+                                        <div
+                                            class="grid grid-cols-3 gap-4 text-center"
+                                        >
+                                            <div
+                                                class="flex flex-col items-center"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined text-3xl text-gray-300 mb-1"
+                                                    >commit</span
+                                                >
+                                                <p
+                                                    class="text-gray-300 text-sm"
+                                                >
+                                                    Git
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="flex flex-col items-center"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined text-3xl text-gray-300 mb-1"
+                                                    >share</span
+                                                >
+                                                <p
+                                                    class="text-gray-300 text-sm"
+                                                >
+                                                    GitHub
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="flex flex-col items-center"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined text-3xl text-gray-300 mb-1"
+                                                    >merge_type</span
+                                                >
+                                                <p
+                                                    class="text-gray-300 text-sm"
+                                                >
+                                                    GitLab
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- APIs & Integration Card -->
+                                    <div
+                                        class="flex flex-col gap-4 rounded-xl border border-[#3c4753] bg-[#1c2126] p-6 hover:shadow-lg hover:shadow-[#1460b7]/30 transition-shadow duration-300"
+                                    >
+                                        <div
+                                            class="flex items-center gap-3 mb-2"
+                                        >
+                                            <span
+                                                class="material-icons-outlined text-[#1460b7] text-2xl"
+                                                >api</span
+                                            >
+                                            <h4
+                                                class="text-white text-lg font-semibold"
+                                            >
+                                                APIs &amp; Integration
+                                            </h4>
+                                        </div>
+                                        <div
+                                            class="grid grid-cols-3 gap-4 text-center"
+                                        >
+                                            <div
+                                                class="flex flex-col items-center"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined text-3xl text-gray-300 mb-1"
+                                                    >http</span
+                                                >
+                                                <p
+                                                    class="text-gray-300 text-sm"
+                                                >
+                                                    RESTful APIs
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="flex flex-col items-center"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined text-3xl text-gray-300 mb-1"
+                                                    >settings_ethernet</span
+                                                >
+                                                <p
+                                                    class="text-gray-300 text-sm"
+                                                >
+                                                    GraphQL
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="flex flex-col items-center"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined text-3xl text-gray-300 mb-1"
+                                                    >settings_input_component</span
+                                                >
+                                                <p
+                                                    class="text-gray-300 text-sm"
+                                                >
+                                                    Microservices
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
